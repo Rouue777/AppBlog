@@ -1,0 +1,28 @@
+<div class="bg-light p-5 rounded-lg m-3">
+  <h1 class="display-4">Bem vindo ao Blogapp</h1>
+  <p class="lead">Esse é um simples Blog, desenvolvido com Node.js + Express + MySQL</p>
+  <hr class="my-4">
+  <p>Aqui te ajudamos á se aprofundar mais em diversos assuntos</p>
+  <a class="btn btn-primary btn-lg" href="/usuario/registro" role="button">Crie uma conta</a>
+</div>
+<hr>
+
+<h2>Postagens recentes</h2>
+{{#each postagem}}
+<div class="card mt-4">
+  <div class="card-body">
+
+    <h4>{{titulo}}</h4>
+    <p>{{descricao}}</p>
+    <a href="/postagens/{{slug}}"><button class="btn btn-success">Leia mais</button></a>
+    <hr>
+    <small>Categoria: {{categorias.nome}}</small>
+    <br>
+    <small>Data de publicação: {{data}}</small>
+
+
+  </div>
+</div>
+{{else}}
+<h4>Nenhuma postagem disponivel</h4>
+{{/each}}
