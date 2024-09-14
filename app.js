@@ -153,7 +153,7 @@ console.log(sequelize instanceof Sequelize);
 
 
 //rodando server
-const PORT = process.env.PORT || 3000; 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log('rodando url http://localhost3001')
 })

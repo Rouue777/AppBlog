@@ -1,7 +1,7 @@
 import sequelize from "./Bd.js";
 import { DataTypes } from "sequelize";
 
-const Usuarios =  sequelize.define('Usuarios', {
+const Usuarios =  sequelize.define('usuarios', {
     nome : {
         type : DataTypes.STRING,
         allowNull: false

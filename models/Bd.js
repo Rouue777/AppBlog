@@ -2,8 +2,9 @@
 import { Sequelize } from 'sequelize';
 
 //sequelize
-const sequelize = new Sequelize('Blogapp', 'root', 'sql123', {
-    host: 'localhost',
+const sequelize = new Sequelize('blogapp', 'root', 'EzsBYoOrLuccbzkToNIkdzbFlYNigZyR', {
+    host: 'junction.proxy.rlwy.net',
+    port : 55947,
     dialect: 'mysql'
 })
 export default sequelize;
