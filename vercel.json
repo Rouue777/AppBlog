@@ -1,16 +1,18 @@
 {
     "version": 2,
     "builds":[
-        {
-            "src": "app.js",
-            "use": "@vercel/node"
+      {
+        "src": "app.js",
+        "use": "@vercel/node",
+        "config": {
+          "buildCommand": "npm install mysql2 && npm install"
         }
+      }
     ],
-
     "routes":[
-        {
-            "src": "/(.*)",
-            "dest": "app.js"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "app.js"
+      }
     ]
-}
+  }
